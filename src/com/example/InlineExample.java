@@ -8,16 +8,15 @@ import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.commons.MethodCallInlinerAdapter;
+import org.objectweb.asm.commons.MethodCallInlinerAdapter.InlinedMethod;
 import org.objectweb.asm.commons.Remapper;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.util.CheckClassAdapter;
 
-import com.smartagent.org.objectweb.asm.commons.MethodCallInlinerAdapter;
-import com.smartagent.org.objectweb.asm.commons.MethodCallInlinerAdapter.InlinedMethod;
-
 /**
- * @author Eric Bruneton
+ * 测试合并方法
  */
 public class InlineExample extends ClassLoader implements Opcodes {
 

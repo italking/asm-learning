@@ -10,11 +10,11 @@ import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.commons.MethodCallInlinerAdapter;
+import org.objectweb.asm.commons.MethodCallInlinerAdapter.InlinedMethod;
 import org.objectweb.asm.commons.Remapper;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.MethodNode;
-
-import com.smartagent.org.objectweb.asm.commons.MethodCallInlinerAdapter;
 
 public class InlineTest {
 	
