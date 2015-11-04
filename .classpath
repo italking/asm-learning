@@ -8,5 +8,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/asm-all-5.0.4.jar" sourcepath="lib/src-5.0.4.zip"/>
+	<classpathentry kind="lib" path="lib/newrelic-weaver-api.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

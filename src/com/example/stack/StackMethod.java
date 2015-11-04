@@ -20,4 +20,8 @@ public class StackMethod {
 		return (double) 1;
 	}
 	
+	public static Object callOrigin(){
+		return null;
+	}
+	
 }

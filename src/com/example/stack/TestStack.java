@@ -1,4 +1,7 @@
 package com.example.stack;
+
+import com.newrelic.api.agent.weaver.Weaver;
+
 /**
  * 测试虚拟机 添加POP 或POP2 指令的时机
  * @author: icewaterpp  
@@ -20,6 +23,20 @@ public class TestStack {
 	public static Double testReturn(){
 		StackMethod.returndubbleMethod();
 		return StackMethod.returnDubbleMethod();
+		
+	}
+	
+	public static void testCall(){
+		StackMethod.returndubbleMethod();
+		StackMethod.voidMethod();
+		Weaver.callOriginal();
+		
+	}
+	
+	public static void callOriginal(){
+		StackMethod.returndubbleMethod();
+		Weaver.callOriginal();
+		
 	}
 	
 }
