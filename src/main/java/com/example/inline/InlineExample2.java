@@ -111,7 +111,7 @@ public class InlineExample2 extends ClassLoader implements Opcodes {
 
     public static void main(final String args[]) throws Exception {
         System.out.println("Inline m_, recompute all frames from scratch");
-        test(false, false);
+       // test(false, false);
        // System.out.println("\nInline m_, inline frames");
         //test(true, true);
 
